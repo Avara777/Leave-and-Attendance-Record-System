@@ -1,0 +1,67 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<title>login - Leave and Attendance Record System</title>
+	<link rel="stylesheet" href="http://localhost/Leave and Attendance Record System/myCss.css"></link>
+	<style>
+	* {	
+  box-sizing: border-box;
+}
+input[type=text],input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.exper{		/*for loginPage*/
+	text-align:center;
+	width:40%;
+	border-radius: 5px;
+  background-color: rgb(250,250,220);
+  padding: 20px;
+	margin-left:30%;
+}
+
+input[type=submit]{
+	display:inline-block;
+	background-color:rgb(250,250,220);
+	padding:10px 25px;
+}
+input[type=submit]:hover{
+cursor:pointer;
+background-color:tan;
+}
+	</style>
+</head>
+<body align="center">
+	<h1 align="center">Leave and Attendance Record System</h1>
+	<h2 align="center">Login </h2>
+	<form method="post" action="http://localhost/Leave and Attendance Record System/loginProcess.php">
+	<p align="center"> 
+	<div class="exper" >
+		<div >
+			<div style="float:left;">
+		<label for="id"><b>Enter</b> Id: </label>
+			</div>
+			<div>
+		<input type="text" name="ID" id="id" required></input><br><br>
+			</div>
+			<div style="float:left;">
+		<label for="password"><b>Enter</b> Password: </label>
+			</div>
+			<div>
+		<input type="password" name="PASSWORD" maxlength="30" id="password" required></input><br><br>
+			</div>
+		<div>		
+		<input type="submit" name="SUBMIT" value="Login"></input></p>
+	</form>
+			</div>
+	</div>
+</body>
+</html>

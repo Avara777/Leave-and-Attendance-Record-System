@@ -1,0 +1,42 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<link rel="stylesheet" href="http://localhost/Leave and Attendance Record System/myCss.css"></link>
+	<title>Update Employee - Leave and Attendance Record System</title>
+</head>
+<body align="center">
+	<h1 >Update Employee - Leave and Attendance Record System</h1>
+	
+	<form method="post" action="http://localhost/Leave and Attendance Record System/updateEmployee.php">
+	<table align="center" id="tableCss">
+	<tr>
+	<td><h3>Add employee id you want to update:</h3>
+	</td>
+	<td>
+	<input type="text" id="id" name="ID" required></input>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<h3 >Update employee</h3>
+	</td>
+	<td>
+	<input type="text" id="na" name="NAME" placeholder="Add new Name" ></input><br>
+	
+	<input type="password" id="pa" name="PASS" placeholder="Add new password"></input><br>
+
+	<input type="text" id="em" name="EMAIL" placeholder="Add new email"></input><br>
+
+	<input type="tel" id="ph" name="PHONE" placeholder="Add new phone number"></input><br>
+	<input type="submit" ></input>
+	</td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>

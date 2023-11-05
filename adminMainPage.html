@@ -1,0 +1,82 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<title>Admin Main Interface - Leave and Attendance Record System</title>
+	<style>
+	body{
+	margin:0;
+	padding:0;
+	align:center;
+	background-image:url("bg3.jpg");
+	background-color: LightGoldenRodYellow;/*rgb(255.255.210)*/
+	}
+	ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 250px;
+			background-color: rgb(250,250,220);
+			margin-left:41%;
+		}
+		
+
+		li a {
+			display: block;
+			color: black;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: tan;
+			color: white;
+			
+		}
+		button{
+		background-color:rgb(250,250,220);
+		color:black;
+		padding:5px;
+		}
+		button:hover{
+		background-color:tan;
+		cursor:pointer;
+		}
+		.logoutButton a:hover{
+						background-color:rgb(245,87,86);
+		}
+	</style>
+	<!--<link rel="stylesheet" href="myCss.css"></link>-->
+</head>
+<body align="center">
+	<div style="border:1px solid black; padding:0px; background-color:Tan;"><h1>Admin - Leave and Attendance Record System	</h1></div> <!--admin main interface -->
+	<div ><b style="background-color:Tan;opacity:70%;">'Welcome Administrator'<b><br></div>
+		<div style=" display:block; "><ul>
+		 <li><h2><a  href="http://localhost/Leave and Attendance Record System/registerNewEmployee.html">Register new employee</a></h2></li>
+		</ul></div>
+		<div style="margin-bottom:15px;"><ul>
+		<li><h2><a href="http://localhost/Leave and Attendance Record System/updateEmpWebpage.html">Update employee</a></h2></li>
+		</ul></div>
+		<div><ul><li style="margin-bottom:15px;"><h2><a href="http://localhost/Leave and Attendance Record System/acceptRejectLeaveRequests.php">Accept/reject leave request</a></h2></li>
+		</ul></div>
+		<div><ul><li><h2><a href="http://localhost/Leave and Attendance Record System/addTotalNumberOfLeavePerYear.php">Add total number of leave per year</a></h2></li></ul></div>
+		<div><ul><li><form method="post" acion="http://localhost/Leave and Attendance Record System/deleteEmployee.php">
+		<h2>Delete employee</a></h2>
+		<div style="">
+		<input size="25" type="text"  placeholder="Add Employee id(to delete):" id="empid" name="EMPID" required></input>
+		<button  type="submit" formaction="http://localhost/Leave and Attendance Record System/deleteEmployee.php" id="delEmp"  name="DELEMP">Delete employee</input></form></ul></div></div>		
+		<div ><ul><li>
+		<form action="http://localhost/Leave and Attendance Record System/viewLeaveRecordOfEmployee.php" method="post">
+		<h2 >Attendance/leave record of an employee</h2>
+		<input type="text" id="id" name="ID" size="30" placeholder="Add Employee id(to view record of):" required></input><button type="submit" >Proceed</button></ul></div>
+		</form>		
+		</li>
+		</ul>
+		</div>
+		<div><ul><li><h2 class="logoutButton"><a href="http://localhost/Leave and Attendance Record System/loginWebpage.html">Logout</a></h2></li></ul></div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<link rel="stylesheet" href="myCss.css"></link>
+	<style>	
+		
+		button{
+				background-color:rgb(250,250,220);
+				color:black;
+		}
+		button:hover{
+				background-color:tan;
+				color:white;
+				cursor:pointer;
+		}
+		.logoutButton a:hover{
+						background-color:rgb(245,87,86);
+		}
+	</style>		
+	<title>Main Interface - Leave and Attendance Record System</title>
+</head>
+<body  align="center">
+   <?php error_reporting (E_ALL ^ E_NOTICE); ?>
+	  <div style="border: 1px solid black: padding:0px; background-color:Tan;"><h1>	Employee Main Interface - Leave and Attendance Record System</h1></div>
+	  <!--employee main interface -->
+      <div><b style="background-color:tan; opacity:70%;">'Welcome Employee'</b></div><br><br>
+	<p align="center"> 
+		</h1>
+		<p>
+		<table align="center">
+		<tr>
+		<td>
+		</td>
+		<td>
+		<form method="post" action="http://localhost/Leave and Attendance Record System/timeInOrTimeOut.php">
+		<tr >
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		
+		<button style="width:120px;height:29px;" type="submit" value="TimeIn" name="TimeIn" id="timein"
+		formaction="http://localhost/Leave and Attendance Record System/timeInOrTimeOut.php"><b>Time in</b></button>
+		<button style="width:120px;height:29px;" type="submit" value="TimeOut" name="TimeOut" id="timeout"
+		formaction="http://localhost/Leave and Attendance Record System/timeInOrTimeOut.php"><b>Time out</b></button>
+		</td>
+		</tr>
+		</table>
+		
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><a href="http://localhost/Leave and Attendance Record System/applyForLeave.php">Leave Application</a></h2>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><a href="http://localhost/Leave and Attendance Record System/viewLeaveStatus.php">View Leave status</a></h2>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><a href="http://localhost/Leave and Attendance Record System/updatePersonalProfileWebpage.html">Update personal profile</a></h2>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><a href="http://localhost/Leave and Attendance Record System/viewTotalRecordOfLeaveOfTheMonthOrYearWebpage.php">View total record of attendance/leave of the month/year
+</a></h2>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2 class="logoutButton"><a style="a:hover{background-color:red;}" href="http://localhost/Leave and Attendance Record System/loginWebpage.html">Logout</a></h2>
+		</td>
+		</tr>
+		</table>
+		</p></input>
+	</p>
+		</form>
+</body>
+</html>	 

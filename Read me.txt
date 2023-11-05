@@ -1,0 +1,21 @@
+Introduction:
+"Leave and Attendance Record System"
+Created by Virtual university student Naeem Nasir. The following web app is an online application which gives a platform to link/ connect subordinates and superiors in an orginizational context. Following application can be used by employers/ executives to administer, manage and oversee employees. Employees can submit their leave/ attendance records and update their profile. Employers can manage thousands of employees and make the whole process efficient.
+
+Created by:
+html, javascript, css, php, mySql, xampp
+
+Functional spec:
+Admin can:
+1- update his profile
+2- login/logout
+3- check pending leaves
+4- check attendance/leave statistics
+5- admin can update/ delete employee
+6- register employee
+
+Employee can:
+1- update his profile
+2- submit beginning/ end of shift time
+3- submit leave
+4- check leave/ attendance related statistics 

@@ -1,0 +1,74 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<link rel="stylesheet" href="http://localhost/Leave and Attendance Record System/myCss.css"></link>
+	<title>Register New Employee - Leave and Attendance Record System</title>
+</head>
+<body align="center">
+	<h1 >Register New Employee - Leave and Attendance Record System</h1>
+	
+		<form method="post" action="http://localhost/Leave and Attendance Record System/regNewEmp.php" >
+	</h1>
+		<p align="center"><h2 align="center">Enter</h2>
+		<table align="center" id="tableCss">
+		<tr>
+		<td>
+		<h2><label for="name">Name:</label></h2>
+		</td>
+		<td>
+		<input type="text" id="name" name="NAME" required>	</input><br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><label for="dob">	Date of birth:	</label></h2>
+		</td>
+		<td>
+		<input type="date" id="dob" name="DOB" required>	</input><br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><label for="exp">	Experience(in years):	</label></h2>
+		</td>
+		<td>
+			<input type="number" id="exp" name="EXP" required>	</input><br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><label for="qual">	Qualification:	</label></h2>
+		</td>
+		<td>
+			<input type="text" id="qual" name="QUAL" required>	</input><br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><label for="phno">	Phone number:	</label></h2>
+		</td>
+		<td>
+				<input type="phno" id="phno" name="PHNO" required>	</input><br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2><label for="email">	Email:	</label></h2>
+		</td>
+		<td>
+		<input type="email" id="email" name="EMAIL" required>	</input><br>		
+		</td>
+		</tr>
+	
+		</table>
+	<p align="center">
+	<input type="submit" name="SUBMIT"><br>
+	</p>
+	</form>
+</body>
+</html>

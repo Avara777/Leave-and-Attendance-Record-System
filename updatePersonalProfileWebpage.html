@@ -1,0 +1,55 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<link rel="stylesheet" href="http://localhost/Leave and Attendance Record System/myCss.css"></link>
+	<title>Update Personal Profile - Leave and Attendance Record System</title>
+</head>
+<body align="center" >
+	<h1 >Update Personal Profile - Leave and Attendance Record System</h1>
+	
+	<form method="post" action="http://localhost/Leave and Attendance Record System/updatePersonalProfile.php" >
+	<table align="center" id="tableCss"> 
+	<tr>
+	<td>
+	<label for="newpass">Change password</label>
+	</td>
+	<td>
+	<input type="password" id="newpass" name="NEWPASSWORD" placeholder="Add new password"></input><br>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<label for="phno">Change phone number	</label>
+	</td>
+	<td>
+	<input type="tel" id="phno" name="PHNO">	</input ><br>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<label for="email">Change email	</label>
+	</td>
+	<td>
+	<input type="email" id="email" name="EMAIL">	</input ><br>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<input type="submit" id="submit" name="SUBMIT" >	</input ><br>
+	</td>
+	<td>
+	</td>
+	</tr>
+	</table>
+	</label>
+	</form>
+</body>
+</html>
