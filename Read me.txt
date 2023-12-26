@@ -19,3 +19,11 @@ Employee can:
 2- submit beginning/ end of shift time
 3- submit leave
 4- check leave/ attendance related statistics 
+
+To login as admin:
+id:  XXX
+password:  12345
+
+To login as employee:
+id:  5
+password:  dummyPassword
